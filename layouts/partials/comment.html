@@ -128,21 +128,20 @@
 
 </style>
 <div id="waline" data-pagefind-ignore></div>
+{{ with .Site.Params.waline }}
+{{ if .enable }}
 <script>
     Waline.init({
         el: "#waline",
-        serverURL: "https://co.gregueria.icu/",
-        emoji: [
-            "https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan",
-            "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif",
-            "https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs",
-            "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png",
-        ],
-        requiredMeta: ["name", "email", "url"],
-        dark: true,
-        locale: {
-            placeholder: '这里有小豆泥表情，请肆无忌惮地使用！^^',
-            admin: 'admin',
-        }
+        serverURL: "{{ .serverURL }}",
+        emoji: {{ .emoji | jsonify }},
+    requiredMeta: ["name", "email", "url"],
+        dark: {{ .dark }},
+    locale: {
+        placeholder: "{{ .locale.placeholder }}",
+            admin: "{{ .locale.admin }}"
+    }
     });
 </script>
+{{ end }}
+{{ end }}
