@@ -1,1 +1,1 @@
-# hugo-looseleaf
+# hugo-looseleaf-theme
