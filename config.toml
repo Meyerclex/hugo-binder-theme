@@ -1,5 +1,5 @@
-baseURL = 'https://gregueria.icu/'
-title = '再會，謝謝所有的魚'
+baseURL = 'https://localhost:1313/'
+title = 'Thanks for All the Fish'
 theme = ['hugo-looseleaf'] #scribbles theme_1
 languageCode = "zh-cn"
 hasCJKLanguage = true
@@ -14,7 +14,6 @@ target = 'assets'
 [[module.mounts]]
 source = 'static'
 target = 'assets'
-
 
 [markup]
 [markup.goldmark]
@@ -51,7 +50,7 @@ endLevel   = 3
 ordered    = false
 
 [params]
-favicon = "/cat/240f9f9b.gif" #图标
+favicon = "/cat/240f9f9b.gif" #站点图标
 sidebar_icon = "/cat/checkeredblank.gif"
 show_spotify = true
 spotify_embed = "https://open.spotify.com/embed/album/1inrucS0iHVHroJVf1jMWg?utm_source=generator"
@@ -96,13 +95,7 @@ content = ""
 enabled = true
 images = [
     "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/byphone/IMG_8853.jpeg",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/byphone/IMG_0091.jpeg",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/byphone/IMG_8512.jpeg",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/catpic(1)(1).png",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/2025/01.jpg",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/2025/02-1.jpg",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/2025/03.jpg",
-    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/2025/02.jpg"
+    "https://pub-219f59729cc7474d97beb0f99a13e6bd.r2.dev/byphone/IMG_0091.jpeg"
 ]
 
 [[menu.main]]
@@ -133,24 +126,9 @@ weight = 5
 
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS"] # 默认输出RSS
 
 [taxonomies]
-tag = "tags"
+tag = "tags" #默认文章分类仅开启Tags
 #series = "series"
 #category = "categories"
-
-# comment
-[params.waline]
-    enable = true
-    serverURL = "https://co.gregueria.icu/"
-    dark = true
-    emoji = [
-        "https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan",
-        "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif",
-        "https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs",
-        "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png"
-    ]
-    [params.waline.locale]
-    placeholder = "这里有小豆泥表情，请肆无忌惮地使用！^^"
-    admin = "admin"
