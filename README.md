@@ -11,7 +11,7 @@
 |   \---goods
 |           goods.json
 +---layouts
-|   |   index.html # 请在此处进行Homepage页面站点名修改。
+|   |   index.html # 主页内容更改
 |   +---partials
 |   |       comment.html # 请在此处进行评论区链接修改。
 |   +---posts
