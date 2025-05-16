@@ -1,6 +1,7 @@
 # hugo-binder-theme
 
 主题魔改自[hugo-theme-nostyleplease](https://github.com/hanwenguo/hugo-theme-nostyleplease)
+基于hugo v0.139.0
 
 ```
 |   config.toml
