@@ -1,1 +1,1 @@
-# hugo-looseleaf-theme
+# hugo-binder-theme
